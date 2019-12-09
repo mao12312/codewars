@@ -1,10 +1,10 @@
 // Bit Counting
 var countBits = function (n) {
     let toBinary = n.toString(2);
-    let strSerch ='1';
-    let count  = 0;
-    for (let i = 0; i < toBinary.length; i++){
-        if(toBinary[i]===strSerch){
+    let strSerch = '1';
+    let count = 0;
+    for (let i = 0; i < toBinary.length; i++) {
+        if (toBinary[i] === strSerch) {
             count++;
         }
     }
