@@ -1,5 +1,7 @@
 // Counting Duplicates
+// My Answer
 function duplicateCount(text) {
+    text = text.toLowerCase();
     textSp = text.split("")
     let count = 0;
     let ex;
@@ -12,11 +14,16 @@ function duplicateCount(text) {
             count++;
         }
     }
-    console.log(count);
-    console.log(res);
+    return count;
 }
-duplicateCount("aabBcde")
 
+
+// bestAnswer
+function duplicateCount(text) {
+    return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
+}
+
+duplicateCount("aDebBcde")
 
 
 
