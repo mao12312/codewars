@@ -1,8 +1,28 @@
 // My Answer
 function duplicateEncode(word) {
-    let spt = word.split('');
-    let res = spt.filter(x => spt.includes(x));
-    console.log(res);
+    word = word.toLowerCase();
+    wordSpt = word.split('');
+    let res = ""
+    for (i = 0; i < wordSpt.length; i++) {
+        if (word.indexOf(wordSpt[i]) === word.lastIndexOf(wordSpt[i])) {
+            res += "(";
+        } else {
+            res += ")"
+        }
+    }
+    return res;
 }
 
-duplicateEncode("dinn")
+// bestAnswer
+function duplicateEncode(word) {
+    return word
+        .toLowerCase()
+        .split('')
+        .map(function (a, i, w) {
+            return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')'
+        })
+        .join('');
+}
+
+
+duplicateEncode("(( @")
