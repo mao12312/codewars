@@ -1,7 +1,5 @@
 function songDecoder(song) {
-    res = song.split('WUB').filter(function (e) {
-        return !(e === "");
-    }).join(" ");
+    res = song.split('WUB').filter(function (e) { return !(e === ""); }).join(" ");
     console.log(res);
 }
 
