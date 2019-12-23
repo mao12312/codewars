@@ -1,4 +1,4 @@
 const title = (word) => {
     console.log("touch " + word.toLowerCase().split(' ').join('-') + ".js");
 }
-title('Lost Without a Map');
+title('Greed is Good');
