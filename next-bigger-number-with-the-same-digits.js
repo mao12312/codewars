@@ -1,5 +1,4 @@
-// pre: 1st half of array
-// post: 2nd half of array
+// unfinished
 const permutation = ({ result = [], pre = [], post, n = post.length }) => {
     if (n > 0) {
         post.forEach((_, i) => {
