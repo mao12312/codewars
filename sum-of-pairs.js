@@ -29,3 +29,15 @@ var sum_pairs = function (ints, s) {
         seen[ints[i]] = true
     }
 }
+// bestAnswer
+function sum_pairs(integers, sum) {
+    var seenNumbers = {};
+    for (var i = 0; i < integers.length; i++) {
+        if (seenNumbers.hasOwnProperty(sum - integers[i])) {
+            return [sum - integers[i], integers[i]];
+        } else {
+            seenNumbers[integers[i]] = true;
+        }
+    }
+    return undefined;
+}

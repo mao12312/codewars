@@ -1,4 +1,4 @@
 const title = (word) => {
     console.log("touch " + word.toLowerCase().split(' ').join('-') + ".js");
 }
-title("Sum of Pairs");
+title("Next bigger number with the same digits");
