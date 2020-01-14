@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Sum of Pairs");
+title("Decode the Morse code");
