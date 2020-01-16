@@ -38,14 +38,24 @@ MORSE_CODE = {
 };
 
 var decodeBits = function (bits) {
-    let res = ''
-    let a = bits.replace(/111/g, '-').replace(/000/g, ' ').replace(/1/g, '.').replace(/0/g, '');
+    bits = bits.replace(/^0+/, '').replace(/0+$/, '');
     
-    console.log(a)
+    // Find transmission rate
+    var rate = Math.min.apply(null, bits.match(/0+|1+/g).map(function (b) { return b.length }))
+    console.log(rate);
+    // Convert to morse code
+    bits = bits
+        .replace(new RegExp('(?:111){' + rate + '}(?:0{' + rate + '}|$)', 'g'), '-')
+        .replace(new RegExp('1{' + rate + '}(?:0{' + rate + '}|$)', 'g'), '.')
+        .replace(new RegExp('(?:000000){' + rate + '}', 'g'), '   ')
+        .replace(new RegExp('(?:00){' + rate + '}', 'g'), ' ')
+
+    // return bits
+            
 }
 
 var decodeMorse = function (morseCode) {
-    
+
     let decodeString = '';
     morseCodeSpt = morseCode.split('  ');
     for (i in morseCodeSpt) {
