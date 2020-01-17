@@ -1,5 +1,5 @@
 function vertMirror(str) {
-    str = str.split('\n').map(function (e) { return e.split('').reverse().join('')}).join('\n');
+    str = str.split('\n').map(function (e) { return e.split('').reverse().join('')}).reverse().join('\n');
     return str
 }
 function horMirror(str) {
