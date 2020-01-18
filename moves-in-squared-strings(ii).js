@@ -4,11 +4,11 @@ function rot(str) {
 }
 function selfieAndRot(str) {
     let dots = str.split('\n').length
-    let strFh = str.split('\n').map(function(e){ return e +=".".repeat(dots)});
-    let strLh = str.split('\n').map(function (e) { return e.split('').reverse().join('') }).map(function (e) { return ".".repeat(dots)+e}).reverse();
+    let strFh = str.split('\n').map(function (e) { return e += ".".repeat(dots) });
+    let strLh = str.split('\n').map(function (e) { return e.split('').reverse().join('') }).map(function (e) { return ".".repeat(dots) + e }).reverse();
     let result = strFh.concat(strLh).join('\n');
     return result
-    
+
 }
 function oper(fct, s) {
     return fct(s);
