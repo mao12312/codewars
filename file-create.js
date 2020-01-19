@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Moves in squared strings(II)");
+title("Count the divisors of a number");
