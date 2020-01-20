@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Count the divisors of a number");
+title("Number of trailing zeros of N");
