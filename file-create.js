@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Array plus array");
+title("Binary to Text (ASCII) Conversion");
