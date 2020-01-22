@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Number of trailing zeros of N");
+title("Make the Deadfish swim");
