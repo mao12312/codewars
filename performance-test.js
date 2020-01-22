@@ -1,5 +1,5 @@
 const { performance } = require('perf_hooks');
-// 測定したい関数
+// Function to measure
 const parse = (data) => {
     let num = 0;
     let res = [];
@@ -18,7 +18,7 @@ const parse = (data) => {
     }
     return res;
 }
-// ここまで
+// end
 var start = performance.now();
 parse("iiisxxxdoso");
 console.log(performance.now() - start);
