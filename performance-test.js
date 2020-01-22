@@ -1,3 +1,5 @@
+const { performance } = require('perf_hooks');
+// 測定したい関数
 const parse = (data) => {
     let num = 0;
     let res = [];
@@ -16,18 +18,7 @@ const parse = (data) => {
     }
     return res;
 }
-parse("iiisxxxdoso")
-// function parse(data) {
-//     let res = [];
-
-//     data.split('').reduce((cur, s) => {
-//         if (s === 'i') cur++;
-//         if (s === 'd') cur--;
-//         if (s === 's') cur = Math.pow(cur, 2);
-//         if (s === 'o') res.push(cur);
-
-//         return cur;
-//     }, 0);
-
-//     return res;
-// }
+// ここまで
+var start = performance.now();
+parse("iiisxxxdoso");
+console.log(performance.now() - start);
