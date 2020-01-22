@@ -28,3 +28,5 @@ const zeros = (n) => {
     return count
 }
 zeros(100)
+
+//参考: https://www.geeksforgeeks.org/count-trailing-zeroes-factorial-number/
