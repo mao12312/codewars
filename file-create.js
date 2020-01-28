@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Grasshopper Grade book");
+title("Primorial Of a Number");
