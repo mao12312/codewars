@@ -5,7 +5,7 @@ const numPrimorial = (n) => {
             prime.push(i)
         }
     }
-    let res = prime.reduce((prev, cur) => {return prev * cur });
+    let res = prime.reduce((prev, cur) => { return prev * cur });
     return res;
 }
 const primeNumber = (i) => {
@@ -15,5 +15,5 @@ const primeNumber = (i) => {
     }
     return true;
 }
-numPrimorial(3)
+numPrimorial(100)
 
