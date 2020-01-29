@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Primorial Of a Number");
+title("Reversed sequence");
