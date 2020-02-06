@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Which are in?");
+title("Balanced Number (Special Numbers Series#1)");
