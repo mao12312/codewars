@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Sum Mixed Array");
+title("noobCode 01: SUPERSIZE ME");
