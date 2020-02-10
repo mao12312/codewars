@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("noobCode 01: SUPERSIZE ME");
+title("Keep Hydrated!");
