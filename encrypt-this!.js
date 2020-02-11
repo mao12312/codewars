@@ -20,4 +20,13 @@ const encryptThis = (text) => {
     let res = resArr.join(' ');
     return res;
 }
+
+
+// other answer
+const encryptThis = text => text
+    .split(' ')
+    .map(word => word
+        .replace(/(^\w)(\w)(\w*)(\w$)/, `$1$4$3$2`)
+        .replace(/^\w/, word.charCodeAt(0)))
+    .join(' ');
 encryptThis("A wise old owl lived in an oak")
