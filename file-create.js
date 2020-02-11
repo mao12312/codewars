@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Keep Hydrated!");
+title("Encrypt this!");
