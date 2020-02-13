@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Convert number to reversed array of digits");
+title("Break camelCase");
