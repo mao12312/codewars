@@ -1,5 +1,6 @@
 const camelCase = (str) => {
-    let res = str.split(" ").map(e => { return e.charAt(0).toUpperCase() + e.slice(1); }).join('');
+    let res = str.split(" ").map(e => { return e.replace(/(^[a-z])/, (_, c) => c.toUpperCase()) }).join('');
+
     return res;
 }
 // My answer
@@ -9,4 +10,6 @@ String.prototype.camelCase = function () {
 }
 camelCase("test case")
 // let res = str.split(" ").map(e => { return e.match(/(^[a-z])/) })
-// let res = str.split(" ").map(word => { return word.replace(/(^[a-z])/, '$&'.toUpperCase()) })
+// NG
+// let res = str.split(" ").map(e => { return e.replace(/(^[a-z])/, '$&'.toUpperCase()) })
+
