@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("CamelCase Method");
+title("CamelCase to underscore");

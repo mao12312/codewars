@@ -1,6 +1,6 @@
+// other answer(use replace)
 const camelCase = (str) => {
     let res = str.split(" ").map(e => { return e.replace(/(^[a-z])/, (_, c) => c.toUpperCase()) }).join('');
-
     return res;
 }
 // My answer
