@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("CamelCase to underscore");
+title("CSV representation of array");
