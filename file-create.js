@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Pokemon Damage Calculator");
+title("Square Every Digit");
