@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Square Every Digit");
+title("String ends with?");
