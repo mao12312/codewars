@@ -3,7 +3,6 @@ const solution = (str, ending) => {
     return res;
 }
 
-
 const solution = (str, ending) => {
     let reg = new RegExp(ending + '$', 'i')
     let res = reg.test(str)
