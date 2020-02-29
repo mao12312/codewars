@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Split Strings");
+title("Find the first non-consecutive number");
