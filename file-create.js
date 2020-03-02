@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Product of consecutive Fib numbers");
+title("Complete The Pattern #1");
