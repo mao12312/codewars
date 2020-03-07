@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Detect Pangram");
+title("fibonatti");
