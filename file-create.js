@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Breaking chocolate problem");
+title("Josephus Survivor");
