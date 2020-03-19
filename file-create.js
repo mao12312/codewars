@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Josephus Survivor");
+title("Delete occurrences of an element if it occurs more than n times");
