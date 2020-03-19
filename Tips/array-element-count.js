@@ -8,4 +8,11 @@ const arrCount = (arr) => {
     // return Array.from(countMap)
     return countMap;
 }
+
+const arrCount = (arr) => {
+    let seen = {};
+    arr.filter((num) => (seen[num] = ~~seen[num] + 1));
+    console.log(seen);
+}
+
 arrCount([20, 37, 20, 21]);
