@@ -11,8 +11,10 @@ const arrCount = (arr) => {
 
 const arrCount = (arr) => {
     let seen = {};
+    // 文字列の場合チルダ一つで、-1になり、もう一つで、0になる(二重ビット否定)
     arr.filter((num) => (seen[num] = ~~seen[num] + 1));
     console.log(seen);
+    // { '20': 2, '21': 1, '37': 1 }
 }
 
 arrCount([20, 37, 20, 21]);
