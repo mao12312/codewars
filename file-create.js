@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Removing Elements");
+title("Simple Fun #74: Growing Plant");
