@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Simple assembler interpreter");
+title("Did you mean");
