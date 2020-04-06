@@ -6,3 +6,5 @@ while ($line = fgetcsv($f)) {
 }
 
 fclose($f);
+
+?>
