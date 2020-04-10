@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Did you mean");
+title("altERnaTIng cAsE <=> ALTerNAtiNG CaSe");
