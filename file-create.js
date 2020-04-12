@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("altERnaTIng cAsE <=> ALTerNAtiNG CaSe");
+title("Is the string uppercase?");
