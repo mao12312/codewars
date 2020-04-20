@@ -9,4 +9,4 @@ const title = (word) => {
         else console.log('create end');
     });
 }
-title("Is the string uppercase?");
+title("Find the divisors!");
