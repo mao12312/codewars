@@ -2,12 +2,12 @@ function snail(column, day, night) {
     let resDay = 0;
     let dis = 0;
 
-    while(dis < column){
+    while (dis < column) {
         dis += day;
         resDay++
-        if(dis < column){
+        if (dis < column) {
             dis -= night;
-        }else{
+        } else {
             break;
         }
     }
